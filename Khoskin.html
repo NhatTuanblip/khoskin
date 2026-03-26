@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kho Skin Game</title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>🎮 Kho Skin Game</h1>
+    <button id="openForm">+ Thêm Skin</button>
+</div>
+
+<div class="top-bar">
+    <input id="search" placeholder="Tìm skin..." class="search">
+    <select id="filter">
+        <option value="all">Tất cả danh mục</option>
+        <option value="Liên Quân">Liên Quân</option>
+        <option value="Valorant">Valorant</option>
+    </select>
+</div>
+
+<!-- Modal Thêm Skin -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>Thêm Skin</h2>
+        <input id="name" placeholder="Tên skin">
+        <input id="price" type="number" placeholder="Giá">
+        <input id="image" placeholder="Link ảnh">
+        <select id="category">
+            <option value="Liên Quân">Liên Quân</option>
+            <option value="Valorant">Valorant</option>
+        </select>
+        <div class="actions">
+            <button id="addBtn">Thêm</button>
+            <button id="closeForm">Đóng</button>
+        </div>
+    </div>
+</div>
+
+<!-- Grid hiển thị Skin -->
+<div id="list" class="grid"></div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <button id="prevPage">&lt;</button>
+    <span id="pageInfo">1/1</span>
+    <button id="nextPage">&gt;</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
